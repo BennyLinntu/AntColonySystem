@@ -1,0 +1,13 @@
+C:\Users\Benny\System File\Desktop\NTU\Second Year, First Semester\柔性演算法\Homework\week9\R10546039YDLINAss09Solution\R10546039YDLINAss09\bin\Debug\R10546039YDLINAss09.exe.config
+C:\Users\Benny\System File\Desktop\NTU\Second Year, First Semester\柔性演算法\Homework\week9\R10546039YDLINAss09Solution\R10546039YDLINAss09\bin\Debug\R10546039YDLINAss09.exe
+C:\Users\Benny\System File\Desktop\NTU\Second Year, First Semester\柔性演算法\Homework\week9\R10546039YDLINAss09Solution\R10546039YDLINAss09\bin\Debug\R10546039YDLINAss09.pdb
+C:\Users\Benny\System File\Desktop\NTU\Second Year, First Semester\柔性演算法\Homework\week9\R10546039YDLINAss09Solution\R10546039YDLINAss09\bin\Debug\AntColonySystem.dll
+C:\Users\Benny\System File\Desktop\NTU\Second Year, First Semester\柔性演算法\Homework\week9\R10546039YDLINAss09Solution\R10546039YDLINAss09\bin\Debug\AntColonySystem.pdb
+C:\Users\Benny\System File\Desktop\NTU\Second Year, First Semester\柔性演算法\Homework\week9\R10546039YDLINAss09Solution\R10546039YDLINAss09\obj\Debug\R10546039YDLINAss09.csproj.AssemblyReference.cache
+C:\Users\Benny\System File\Desktop\NTU\Second Year, First Semester\柔性演算法\Homework\week9\R10546039YDLINAss09Solution\R10546039YDLINAss09\obj\Debug\R10546039YDLINAss09.MainForm.resources
+C:\Users\Benny\System File\Desktop\NTU\Second Year, First Semester\柔性演算法\Homework\week9\R10546039YDLINAss09Solution\R10546039YDLINAss09\obj\Debug\R10546039YDLINAss09.Properties.Resources.resources
+C:\Users\Benny\System File\Desktop\NTU\Second Year, First Semester\柔性演算法\Homework\week9\R10546039YDLINAss09Solution\R10546039YDLINAss09\obj\Debug\R10546039YDLINAss09.csproj.GenerateResource.cache
+C:\Users\Benny\System File\Desktop\NTU\Second Year, First Semester\柔性演算法\Homework\week9\R10546039YDLINAss09Solution\R10546039YDLINAss09\obj\Debug\R10546039YDLINAss09.csproj.CoreCompileInputs.cache
+C:\Users\Benny\System File\Desktop\NTU\Second Year, First Semester\柔性演算法\Homework\week9\R10546039YDLINAss09Solution\R10546039YDLINAss09\obj\Debug\R10546039YDLINAss09.csproj.CopyComplete
+C:\Users\Benny\System File\Desktop\NTU\Second Year, First Semester\柔性演算法\Homework\week9\R10546039YDLINAss09Solution\R10546039YDLINAss09\obj\Debug\R10546039YDLINAss09.exe
+C:\Users\Benny\System File\Desktop\NTU\Second Year, First Semester\柔性演算法\Homework\week9\R10546039YDLINAss09Solution\R10546039YDLINAss09\obj\Debug\R10546039YDLINAss09.pdb

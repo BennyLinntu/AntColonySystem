@@ -1,0 +1,394 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TSPBenchmark</name>
+    </assembly>
+    <members>
+        <member name="T:NTU.IIE.CALab.MetaFileGenerator.MetaFileDrawingDelegate">
+            <summary>
+             Metafile 存檔時，會進行呼叫的圖形繪製函式委派。
+            </summary>
+            <param name="device">圖形顯示設備</param>
+            <param name="bound">圖形顯示設備上的繪圖矩形區</param>
+        </member>
+        <member name="T:NTU.IIE.CALab.MetaFileGenerator.MetaFileGenerator">
+            <summary>
+             Metafile 存檔靜態類別，提供靜態的圖形繪製事件，以及存檔函式。
+             使用前，使用者須準備圖形繪製事件處理函式，添加到本靜態類別的
+             圖形繪製事件。之後才能呼叫存檔函式。
+            </summary>
+        </member>
+        <member name="F:NTU.IIE.CALab.MetaFileGenerator.MetaFileGenerator.ApplicationFormHandle">
+            <summary>
+             Meta file 產生器使用的 WinForm application handle。用以開啟剪貼簿。
+            </summary>
+        </member>
+        <member name="E:NTU.IIE.CALab.MetaFileGenerator.MetaFileGenerator.DrawContent">
+            <summary>
+             圖形繪製事件，由使用者提供
+            </summary>
+        </member>
+        <member name="M:NTU.IIE.CALab.MetaFileGenerator.MetaFileGenerator.SaveAsAMetaFile">
+            <summary>
+             存檔函式，內容在顯示設備的(0,0,640,480)矩形內。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NTU.IIE.CALab.MetaFileGenerator.MetaFileGenerator.SaveAsAMetaFile(System.Int32,System.Int32)">
+            <summary>
+             存檔函式，呼叫者須提供顯示設備繪製的矩形寬高。
+            </summary>
+            <param name="width">矩形寬</param>
+            <param name="height">矩形高</param>
+            <returns></returns>
+        </member>
+        <member name="M:NTU.IIE.CALab.MetaFileGenerator.MetaFileGenerator.SaveAsAMetaFile(System.Drawing.RectangleF)">
+            <summary>
+             存檔函式，呼叫者須提供顯示設備繪製的矩形區域。
+            </summary>
+            <param name="contentBound">圖面繪製矩形位置</param>
+            <returns></returns>
+        </member>
+        <member name="M:NTU.IIE.CALab.MetaFileGenerator.MetaFileGenerator.CopyAsAMetaFileFormat">
+            <summary>
+             拷貝meta file內容到剪貼簿，大小為640 * 480
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NTU.IIE.CALab.MetaFileGenerator.MetaFileGenerator.CopyAsAMetaFileFormat(System.Int32,System.Int32)">
+            <summary>
+             拷貝meta file內容到剪貼簿，呼叫者須提供矩形區域的寬和高。
+            </summary>
+            <param name="width"></param>
+            <param name="height"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NTU.IIE.CALab.MetaFileGenerator.MetaFileGenerator.CopyAsAMetaFileFormat(System.Drawing.RectangleF)">
+            <summary>
+             拷貝meta file內容到剪貼簿，呼叫者須提供顯示設備繪製的矩形區域。
+            </summary>
+            <param name="contentBound"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NTU.IIE.CALab.MetaFileGenerator.MetaFileGenerator.SaveAsAMetaFile(System.String,System.Drawing.RectangleF)">
+            <summary>
+             存檔函式，呼叫者須提供檔案路徑，以及顯示設備繪製的矩形區域。
+            </summary>
+            <param name="filePath">存檔路徑</param>
+            <param name="contentBound">圖面繪製矩形位置</param>
+            <returns></returns>
+        </member>
+        <member name="T:TSPBenchmark.TSPBenchmarkProblem">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.NumberOfObjects">
+            <summary>
+            Number of objects or cities. <br/>
+            物件或城市的個數。
+            </summary>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.NumberOfCities">
+            <summary>
+            Number of objects or cities. <br/>
+            物件或城市的個數。
+            </summary>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.CoordinateDimension">
+            <summary>
+            Coordinate dimension of the locations of cities.
+            物件座標的維度。
+            </summary>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.Name">
+            <summary>
+            The title ofthe problem. <br/>
+            標竿問題的名稱。
+            </summary>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.Type">
+            <summary>
+            The type of the generic TSP problem.  <br/>
+            標竿問題的種類。
+            </summary>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.Comment">
+            <summary>
+            The comments added.  <br/>
+            標竿問題的註解。
+            </summary>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.OptimumObjective">
+            <summary>
+            The smallest distance traversed by the traveling salesmam. <br/>
+            標竿問題的最短路徑長度。TSP:最短路徑長度。
+            </summary>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.GlobalShorestLength4TSP">
+            <summary>
+            The smallest distance traversed by the traveling salesmam. <br/>
+            標竿問題的最短路徑長度。TSP:最短路徑長度。
+            </summary>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.Coordinates">
+            <summary>
+            The locations of the unknown object: coordinates[object id,coordinate id]。<br/>
+            城市或物件的座標。coordinates[物件索引,座標索引]。
+            </summary>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.DisplayCoordinates">
+            <summary>
+            The locations of the unknown object: coordinates[object id,coordinate id]。<br/>
+            城市或物件的圖形顯示座標。coordinates[物件索引,座標索引]。
+            </summary>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.BenchmarkIsReady">
+            <summary>
+             旗標，設定是否標竿問題已經讀入。
+            </summary>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.FromToMatrix">
+            <summary>
+            The computed or read transpotation <br/>
+            From-To距離矩陣。
+            </summary>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.FromToDistanceMatrix">
+            <summary>
+            The computed or read transpotation <br/>
+            From-To距離矩陣。        /// </summary>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.OptimalTour">
+            <summary>
+            The known shortest path. <br/>
+            已知最短路徑的繞行途程。由物件編號組成陣列。
+            </summary>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.MinimalDistance">
+            <summary>
+            The known shortest distance. <br/>
+            已知最短路徑的繞行途程長度。
+            </summary>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.HasOptimalTour">
+            <summary>
+            是否有最短路徑的繞行資料。
+            </summary>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.HasOptimalObjective">
+            <summary>
+            Is the shorest path exist. <br/>
+            是否有最短路徑的長度值。
+            </summary>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.TspFilePath">
+            <summary>
+            The file path of the benchmark input file.<br/>
+            標竿檔案的完整路徑。
+            </summary>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.TourFilePath">
+            <summary>
+            The file path of the known shorest path file. <br/>
+            已知最短路徑的檔案路徑。
+            </summary>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.FileContents">
+            <summary>
+            The content of the benchmark file. <br/>
+            標竿檔案內容。
+            </summary>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.AverageDistance">
+            <summary>
+            Get the average of the distances in the from-to matrix. <br/>
+            From-to距離矩陣中兩物件間的平均長度。
+            </summary>
+            <returns>the average distance<br/>
+            平均長度</returns>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.MaximumDistance">
+            <summary>
+            Get the longest distance in the from-to matrix. <br/>
+            From-to距離矩陣中兩物件間的長距離。
+            </summary>
+            <returns>the longest distance<br/>
+            最長距離</returns>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.CapacityOfVRP">
+            <summary>
+            The vehicle loading capacity in VRP. <br/>
+            車輛途程問題的車容量上限。
+            </summary>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.NumberOfDepotOFVRP">
+            <summary>
+            The number of depots in VRP.<br/>
+            車輛途程問題的車站數目。
+            </summary>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.DepotIDListOfVRP">
+            <summary>
+            The index array of the depots. <br/>
+            車輛途程問題的車站索引陣列。
+            </summary>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.DemandsOfVRP">
+            <summary>
+            The number of delivery objects of all pickup/delivery points. <br/>
+            車輛途程問題的各取卸貨點的貨物數量。
+            </summary>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.AdjancyMatrixOfVCP">
+            <summary>
+            The adjacecy martix of a VCP. <br/>
+            著色問題的鄰接限制矩陣。
+            </summary>
+        </member>
+        <member name="M:TSPBenchmark.TSPBenchmarkProblem.AssignFileDirectory(System.String)">
+            <summary>
+            Assign the file path of the benchmark problem. <br/>
+            設定標竿問題的檔案路徑。
+            </summary>
+            <param name="benchmarkFilePath"> File path <br/>
+            檔案路徑</param>
+        </member>
+        <member name="M:TSPBenchmark.TSPBenchmarkProblem.ImportATSPFile(System.Boolean,System.Boolean)">
+            <summary>
+            Load a TSP benchmark input file that has .tsp file extension. The shorest path file has .opt.tour file extension. <br/>
+            載入一個TSP標竿問題。標竿問題的副檔名是 .tsp，最佳解的副檔名是 .opt.tour。兩者應放於同一個目錄內。
+            </summary>
+            <param name="showMessage">whether prompt messagebox <br/>
+            是否秀出訊息視窗</param>
+            <param name="newOne">whether reselect a new benchmark <br/>
+            是否新開一個標竿問題</param>
+            <returns> return 1 for successful import; -1 for file not exist; 0 for invalid file format. <br/>
+            正確成功時回傳 1；檔案不存在時回傳 -1；檔案存在但是內容格式錯誤，導致輸入失敗時回傳 0 。</returns>
+        </member>
+        <member name="M:TSPBenchmark.TSPBenchmarkProblem.ComputeObjectiveValue(System.Int32[])">
+            <summary>
+            Computer the routing length of the given route. <br/>
+            求算繞行路徑 route 的路徑長。
+            </summary>
+            <param name="route">the route<br/>
+            繞行路徑，物件的編號陣列</param>
+            <returns>the routing distance<br/>
+            路徑長</returns>
+        </member>
+        <member name="M:TSPBenchmark.TSPBenchmarkProblem.ComputeRouteLength(System.Int32[])">
+            <summary>
+             與 ComputeObjectiveValue() 相同，計算路徑長。
+            </summary>
+            <param name="route">the route<br/>
+            繞行路徑，物件的編號陣列</param>
+            <returns>the routing distance<br/>
+            路徑長</returns>
+        </member>
+        <member name="M:TSPBenchmark.TSPBenchmarkProblem.GetGreedyShortestRouteAndLength(System.Double@)">
+            <summary>
+            取得貪婪法找到的最短途程，同時取得最短路徑長。
+            </summary>
+            <param name="shortestLength">最短路徑長</param>
+            <returns>最短路徑</returns>
+        </member>
+        <member name="M:TSPBenchmark.TSPBenchmarkProblem.GetGreedyShortestRoute">
+            <summary>
+             取得貪婪法找到的最短途程。
+            </summary>
+            <returns>最短路徑</returns>
+        </member>
+        <member name="M:TSPBenchmark.TSPBenchmarkProblem.SaveChartAsMetaFile(System.Int32,System.Int32)">
+            <summary>
+             儲存路徑圖檔成為一個 meta file 格式的檔案。
+            </summary>
+            <param name="width">meta file 圖檔的寬度</param>
+            <param name="height">meta file 圖檔的高度</param>
+            <returns>成功與否</returns>
+        </member>
+        <member name="M:TSPBenchmark.TSPBenchmarkProblem.CopyChartToClipboard(System.Int32,System.Int32)">
+            <summary>
+             將繞行路徑圖以 meta file 格式拷貝到剪貼簿。
+            </summary>
+            <param name="width">meta file 圖檔的寬度</param>
+            <param name="height">meta file 圖檔的高度</param>
+            <returns>成功與否</returns>
+        </member>
+        <member name="M:TSPBenchmark.TSPBenchmarkProblem.DrawCitiesOptimalRouteAndARoute(System.Drawing.Graphics,System.Int32,System.Int32,System.Int32[])">
+            <summary>
+            Draw the location of the cities, the known shorest path, and the user specified route on a user specified graphical device. <br/>
+            繪出個物件的位置、已知最短路徑、以及使用者提供的繞行路徑。如果有已知最短路徑，也會畫出該路徑。
+            </summary>
+            <param name="graphics">the graphics object of the graphical device<br/>
+            視窗界面上任何控制項的圖形展現物件</param>
+            <param name="Width">the width of the graphical device<br/>
+            圖形控制項的寬度</param>
+            <param name="Height">the height of the graphical device<br/>
+            圖形控制項的高度</param>
+            <param name="route">the user specified route<br/>
+            使用者提供的路徑，是物件編號陣列</param>
+        </member>
+        <member name="M:TSPBenchmark.TSPBenchmarkProblem.DrawCitesAndARoute(System.Drawing.Graphics,System.Int32,System.Int32,System.Int32[])">
+            <summary>
+            Draw the location of the cities and the user specified route on a user specified graphical device. <br/>
+            繪出個物件的位置以及使用者提供的繞行路徑。
+            </summary>
+            <param name="graphics">the graphics object of the graphical device<br/>
+            視窗界面上任何控制項的圖形展現物件</param>
+            <param name="Width">the width of the graphical device<br/>
+            圖形控制項的寬度</param>
+            <param name="Height">the height of the graphical device<br/>
+            圖形控制項的高度</param>
+            <param name="route">the user specified route<br/>
+            使用者提供的路徑，是物件編號陣列</param>
+        </member>
+        <member name="M:TSPBenchmark.TSPBenchmarkProblem.DrawCitiesAndARoute(System.Drawing.Graphics,System.Int32,System.Int32,System.Int32[0:,0:])">
+            <summary>
+            Draw the location of the cities and the user specified route on a user specified graphical device. <br/>
+            繪出個物件的位置以及使用者提供的繞行路徑。
+            </summary>
+            <param name="graphics">the graphics object of the graphical device<br/>
+            視窗界面上任何控制項的圖形展現物件</param>
+            <param name="Width">the width of the graphical device<br/>
+            圖形控制項的寬度</param>
+            <param name="Height">the height of the graphical device<br/>
+            圖形控制項的高度</param>
+            <param name="assignment">the user specified route in tems of an nxn 0-1 matrix<br/>
+            使用者提供的路徑，使用者提供的繞行順位指定資料，是 nxn的0-1矩陣</param>
+        </member>
+        <member name="M:TSPBenchmark.TSPBenchmarkProblem.DrawCitiesAndARoute(System.Drawing.Graphics,System.Int32,System.Int32,System.Single[0:,0:])">
+            <summary>
+            Draw the location of the cities and the user specified route on a user specified graphical device. <br/>
+            繪出個物件的位置以及使用者提供的繞行路徑。
+            </summary>
+            <param name="graphics">the graphics object of the graphical device<br/>
+            視窗界面上任何控制項的圖形展現物件</param>
+            <param name="Width">the width of the graphical device<br/>
+            圖形控制項的寬度</param>
+            <param name="Height">the height of the graphical device<br/>
+            圖形控制項的高度</param>
+            <param name="realAssignment">the user specified route in tems of an nxn real number matrix<br/>
+            使用者提供的路徑，使用者提供的繞行順位指定資料，是 nxn的實數矩陣</param>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.RoutePen">
+            <summary>
+             The Pen that draws the route.
+            </summary>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.ShortestRoutePen">
+            <summary>
+             The Pen that draws the route.
+            </summary>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.CityPen">
+            <summary>
+             The pen that draws the city rectangle
+            </summary>
+        </member>
+        <member name="P:TSPBenchmark.TSPBenchmarkProblem.CitySquareWidth">
+            <summary>
+             The width of the city square;
+            </summary>
+        </member>
+    </members>
+</doc>

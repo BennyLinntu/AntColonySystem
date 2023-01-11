@@ -1,0 +1,6 @@
+C:\Users\Benny\System File\Desktop\NTU\Second Year, First Semester\柔性演算法\Homework\week9\R10546039YDLINAss09Solution\AntColonySystem\bin\Debug\AntColonySystem.dll
+C:\Users\Benny\System File\Desktop\NTU\Second Year, First Semester\柔性演算法\Homework\week9\R10546039YDLINAss09Solution\AntColonySystem\bin\Debug\AntColonySystem.pdb
+C:\Users\Benny\System File\Desktop\NTU\Second Year, First Semester\柔性演算法\Homework\week9\R10546039YDLINAss09Solution\AntColonySystem\obj\Debug\AntColonySystem.csproj.CoreCompileInputs.cache
+C:\Users\Benny\System File\Desktop\NTU\Second Year, First Semester\柔性演算法\Homework\week9\R10546039YDLINAss09Solution\AntColonySystem\obj\Debug\AntColonySystem.dll
+C:\Users\Benny\System File\Desktop\NTU\Second Year, First Semester\柔性演算法\Homework\week9\R10546039YDLINAss09Solution\AntColonySystem\obj\Debug\AntColonySystem.pdb
+C:\Users\Benny\System File\Desktop\NTU\Second Year, First Semester\柔性演算法\Homework\week9\R10546039YDLINAss09Solution\AntColonySystem\obj\Debug\AntColonySystem.csproj.AssemblyReference.cache

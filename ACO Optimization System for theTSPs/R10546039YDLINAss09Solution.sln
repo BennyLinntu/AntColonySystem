@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R10546039YDLINAss09", "R10546039YDLINAss09\R10546039YDLINAss09.csproj", "{EAD75352-A686-430D-B8E7-FED57451BAD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntColonySystem", "AntColonySystem\AntColonySystem.csproj", "{1A7EDBDD-CB25-47AD-A3E2-6A1EBB9703A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAD75352-A686-430D-B8E7-FED57451BAD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAD75352-A686-430D-B8E7-FED57451BAD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAD75352-A686-430D-B8E7-FED57451BAD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAD75352-A686-430D-B8E7-FED57451BAD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A7EDBDD-CB25-47AD-A3E2-6A1EBB9703A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A7EDBDD-CB25-47AD-A3E2-6A1EBB9703A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A7EDBDD-CB25-47AD-A3E2-6A1EBB9703A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A7EDBDD-CB25-47AD-A3E2-6A1EBB9703A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF35CFA4-B7D4-418A-8682-AC5ED6C3EB1E}
+	EndGlobalSection
+EndGlobal
